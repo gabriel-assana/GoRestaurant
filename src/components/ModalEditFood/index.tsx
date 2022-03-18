@@ -1,5 +1,5 @@
 import { FormHandles } from '@unform/core';
-import { Component, createRef, FormEventHandler, useRef } from 'react';
+import { useRef } from 'react';
 import { FiCheckSquare } from 'react-icons/fi';
 
 import Input from '../Input';
@@ -23,17 +23,15 @@ interface IFood {
   image: string;
 }
 
-interface ModalEditFood {
+interface ModalEditFoodProps {
+  isOpen: boolean ;
   setIsOpen: () => void;
   handleUpdateFood:(data:AddFood) => void;
-  isOpen: boolean ;
   editingFood: IFood
-
 }
 
-
-export default function ModalEditFood(
-    {setIsOpen, handleUpdateFood, isOpen, editingFood }:ModalEditFood){
+export default function ModalEditFood ({setIsOpen, handleUpdateFood, isOpen, editingFood }:ModalEditFoodProps)
+{
   
   const formRef = useRef<FormHandles>(null);
 
