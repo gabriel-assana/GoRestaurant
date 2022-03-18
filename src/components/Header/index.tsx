@@ -7,7 +7,7 @@ interface HeaderProps {
   openModal : () => void
 }
 
-export function Header({openModal}: HeaderProps) {
+export default function Header({openModal}: HeaderProps) {
   
   return (
     <Container>

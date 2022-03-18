@@ -19,7 +19,7 @@ interface FoodProps{
   handleDelete: (id:number) => void,
 }
 
-export function Food ({ food, handleEditFood, handleDelete }:FoodProps){
+export default function Food ({ food, handleEditFood, handleDelete }:FoodProps){
 
   const { available } = food;
   const [isAvailable, setisAvailable] = useState( available );
