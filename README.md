@@ -6,8 +6,9 @@
 <p align="center">
  Aplicação desenvolvida no desafio Ignite React da Rocketseat - Chapter II - Desafio 02 - Refactoring de classes e TypeScript.
 </p>
+</br>
 <p align="center">
-  Desafio tem como principal objetivo, realizar a conversão de uma aplicação que se encontra em JavaScript para Typescript.
+  Desafio tem como principal objetivo realizar a conversão de uma aplicação que se encontra em JavaScript para Typescript.
 </p>  
 
 <h1 align="center">
@@ -16,13 +17,10 @@
 
 ## 🔎 Features
 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-
+- [x] Criar um novo prato.
+- [x] Editar imagem, titulo, valor e descrição dos pratos.
+- [x] Exclusão dos pratos
+- [x] Deixar pratos disponiveis ou indisponiveis.
 
 ## :rocket: Tecnologias
 
@@ -32,7 +30,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✔️ React-hooks
 
+✔️ React-modal
+
 ✔️ Axios
+
+✔️ Json-Server
 
 ✔️ Typescript
 
@@ -68,4 +70,4 @@ $ yarn server
 $ cd GoRestaurant
 # Abra um novo terminal e execute a aplicação em modo de desenvolvimento
 $ yarn dev
-# O servidor do front-end inciará na porta:8080 - acesse <http://localhost:8080>
+# O servidor do front-end inciará na porta:3000 - acesse <http://localhost:3000>
